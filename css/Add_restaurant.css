@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue-800: rgb(39, 129, 231);
+    --blue-900: rgb(15, 108, 214);
+    --green-500: rgb(58, 183, 87);
+    --textcolor-heading: rgb(54, 54, 54);
+    --textcolor-para: rgb(103, 103, 103);
+
+}
+
+/* header{
+    background-color: red;
+} */
+
+.flex{
+    display: flex;
+}
+
+.restaurant-container{
+    width: 68%;
+    margin: 0 auto;
+}
+
+.restaurant-btn{
+    background-color: var(--blue-800);
+}
+
+.restaurant-btn:hover{
+    background-color: var(--blue-900);
+}
+
+button{
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+/* restaurant_nav*/
+
+.restaurant-nav{
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    color: white;
+}
+
+.restaurant-logo{
+    width:14%;
+}
+
+.restaurant-logo img{
+    width: 100%;
+}
+
+.restaurant-header-right{
+    align-items: center;
+}
+
+.restaurant-product-menu{
+    align-items: center;
+    font-size: 1.2em;
+    margin-right: 20px; 
+}
+
+.restaurant-product-menu-p{
+    padding-right: 10px;
+}
+
+.restaurant-header-right i{
+    transform: rotate(90deg);
+    margin: 12px;
+}
+
+.restaurant-login{
+    padding: 7px 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 20px;
+    color: inherit;
+}
+
+.restaurant-create-accnt{
+    background-color: var(--blue-800);
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+
+/*----Banner Image---*/
+
+.restaurant-register-container{
+    position: relative;
+}
+.restaurant-banner-image{
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    overflow: hidden;
+    top: -140px;
+    z-index: -1;
+}
+
+.restaurant-banner-image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurant-main-shadow{
+    width: 100%;
+    position: absolute;
+    height: 10%;
+    overflow: hidden;
+    top: -140px;
+    z-index: 1;
+    box-shadow: inset -1000px -1000px 500px rgb(0, 0, 0, 0.2),
+    inset 1000px 1000px 1000px rgb(0, 0, 0, 0.2);
+}
+
+.restaurant-add-restaurant{
+    color: white;
+    position: relative;
+    z-index: 2;
+    padding-top: 100px;
+}
+
+.restaurant-add-restaurant h1{
+   font-size: 2em;
+   margin: 0;
+}
+
+.restaurant-add-restaurant p{
+    font-size: 1.5em;
+    margin: 10px 0;
+ }
+ 
+
+.restaurant-register-btn{
+    font-size: 1em;
+    color: white;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    padding: 15px 65px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+.restaurant-register-btn:first-child{
+    margin-right: 15px;
+}
+
+
+/* Restaurant Signup*/
+
+.restaurant-signup{
+    background-color: white;
+    color: black;
+    width: 79%;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.restaurant-signup-heading{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.restaurant-signup-heading h2{
+    margin: 0;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    color:var(--textcolor-heading)
+  }
+
+.restaurant-signup-heading p{
+  margin: 0;
+  padding-top: 7px;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  color:var(--textcolor-para)
+}
+
+.restaurant-signup ul{
+    /* padding: 30px; */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurant-signup i{
+    color:var(--green-500);
+    margin-right: 10px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.restaurant-signup ul li{
+    margin-top: 20px;
+    width: 50%;
+    font-size: 1.1em;
+    font-weight: 500;
+    color:var(--textcolor-heading)
+} 
+
+
+/*Mobile View*/
+@media(max-width: 780px) {
+
+    header{
+    background-color: white;
+}
+
+
+.restaurant-nav{
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    color: black;
+}
+
+restaurant-product-menu
+    
+    .restaurant-logo{
+
+
+    }
+
+    .restaurant-login,.restaurant-create-accnt {
+       display: none;
+    }
+}
+
+
