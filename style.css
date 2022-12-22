@@ -126,7 +126,7 @@ input[type="text"]:focus {
 .order-cat {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 50px;
+	grid-gap: 10px;
 	margin-bottom: 50px;
 	/* border: 2px solid purple; */
 }
@@ -252,6 +252,17 @@ h1.local-title {
 
 .local-box .fa-chevron-right {
 	font-size: 10px;
+}
+.more{
+	margin-left: 50px;
+}
+
+#more-items{
+    transform: rotate(90deg);
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #more-items{
