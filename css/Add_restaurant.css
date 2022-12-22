@@ -119,8 +119,8 @@ button{
     overflow: hidden;
     top: -140px;
     z-index: 1;
-    box-shadow: inset -1000px -1000px 500px rgb(0, 0, 0, 0.2),
-    inset 1000px 1000px 1000px rgb(0, 0, 0, 0.2);
+    box-shadow: inset -1000px -1000px 500px rgb(0, 0, 0, 0.1),
+    inset 1000px 1000px 1000px rgb(0, 0, 0, 0.1);
 }
 
 .restaurant-add-restaurant{
@@ -146,15 +146,21 @@ button{
     color: white;
     letter-spacing: 0.3px;
     font-weight: 400;
-    padding: 15px 65px;
+    padding: 15px 0;
     border: none;
     border-radius: 5px;
     box-sizing: border-box;
-    border: 2px solid red;
+    width: 50%;
+    /* border: 2px solid red; */
 }
+
 
 .restaurant-register-btn:first-child{
     margin-right: 15px;
+}
+
+.btn-restaurant{
+    width: 79%;
 }
 
 
@@ -207,10 +213,228 @@ button{
 .restaurant-signup ul li{
     margin-top: 20px;
     width: 50%;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 500;
     color:var(--textcolor-heading)
 } 
+
+
+/* restaurant-partner-zomato-content */
+
+.restaurant_partner_zomato{
+    margin-top: 200px;
+}
+
+.restaurant-partner-zomato-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.restaurant-partner-zomato-content h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color:var(--textcolor-heading);
+    margin: 0;
+}
+
+.restaurant-partner-zomato-content p{
+    font-size: 1.4rem;
+    color:var(--textcolor-para);
+    text-align: center;
+    margin: 10px;
+}
+
+.restaurant-partner-content{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.restaurant-partner-content-item{
+    display: flex;
+    align-items: center;
+    margin: 80px 0;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+.restaurant-partner-iconimage{
+    width: 30px;
+}
+
+.restaurant-partner-iconimage img{
+    width: 100%;
+}
+
+.globe-text_large{
+    font-size: 1.5rem;
+    color:var(--blue-800)
+}
+
+.globe-text_small{
+    font-size: 1.2rem;
+    color:var(--textcolor-para)
+}
+
+/* background Image */
+
+.hometowork-background{
+    width: 100%;
+    height: 300px;
+    background:url(https://b.zmtcdn.com/merchant-onboarding/f57794be6408563354c463c702ab45b91600672364.png);
+}
+
+.hometowork-content_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.hometowork-content_content h1{
+    color: var(--textcolor-heading);
+    font-weight: 520;
+}
+
+.restaurant-homework-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-homework-item{
+    /* box-shadow: 5px 5px 5px rgbs(0,0,0,0.2); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+}
+
+.restaurant-homework-item p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: var(--textcolor-heading);
+}
+
+.hometowork-content{
+    position:relative;
+    top: -250px;
+}
+
+.restaurant-homework-item h4{
+    margin: 0;
+    font-weight: 549;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    color: var(--textcolor-para);
+}
+
+.restaurant-homework-item p:nth-child(2){
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.2em;
+}
+
+.restaurant-homework-item img{
+    padding: 30px;
+}
+
+.firstpage_link{
+    position:relative;
+    top: -100px;  
+}
+
+.firstpage_link_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.firstpage_link_content_search{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 10px rgba(0,0,0.0.1);
+    border: 2px solid red;
+}
+
+.firstpage_link_content_search .location-map{
+    color: var(--textcolor-para);
+}
+
+.irstpage_link_content_search .search-bar .search-3{
+	background-color: #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 70%;
+	padding: 15px 10px;
+	border-radius: 10px;
+}
+
+.firstpage_link_content_search .fa-map-marker-alt {
+	color: #F57082;
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+input[type="text"] {
+	border: 0;
+	font-family: inherit;
+	font-size: 16px;
+}
+
+input[type="text"]:focus {
+	outline: 0;
+}
+
+.fa-caret-down {
+	color: #4f4f4f;
+	font-size: 16px;
+	margin: 0 8px;
+}
+
+.firstpage_link_content_search .search-bar .search-3 {
+	border-right: 2px solid #cfcfcf;
+}
+
+.fa-search {
+	color: #828282;
+	font-size: 16px;
+	margin: 0 10px;
+}
+
+/* form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-left:10%;
+	margin-top: 10px;
+}
+.col-xs-6{
+	margin-right: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Mobile View*/
@@ -228,12 +452,12 @@ button{
     color: black;
 }
 
-restaurant-product-menu
+/* .restaurant-product-menu
     
     .restaurant-logo{
 
 
-    }
+    } */
 
     .restaurant-login,.restaurant-create-accnt {
        display: none;
