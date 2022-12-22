@@ -254,6 +254,18 @@ h1.local-title {
 	font-size: 10px;
 }
 
+#more-items{
+    transform: rotate(90deg);
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.more{
+	margin-left: 50px;
+}
+
 /*Get zomato app*/
 .zom-app {
 	background-color: #FFFBF7;
