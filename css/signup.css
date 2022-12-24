@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(70, 66, 66);
+}
+.container{
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    height: 480px;
+    width: 430px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.form-container h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1rem 0px;
+    font-weight: 500;
+    color: rgb(79, 79, 79);
+    font-family: poppins,sans-serif;
+}
+.form-container2 {
+    height: 80%;
+    /* background-color: pink; */
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    font-size: larger;
+   
+}
+hr {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+.or-text {
+    background-color: white;
+    width: 20px;
+    font-size: larger;
+    margin: -15px auto 15px;
+}
+.btn img {
+    height: 30px;
+    width: 30px;
+}
+.form-container2 .input-box ,.btn {
+    /* background-color: deeppink; */
+    width: 95%;
+    height: 15%;
+    font-size: large;
+    margin: 10px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+.account {
+    width: 95%;
+    height: 15%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin: 10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.account:active {
+    color: white;
+    background-color: crimson;
+}
+.btn {
+    margin-top: -30px;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.input-check {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.form-para {
+     /* border: 2px solid black; */
+     width: 90%;
+     position: relative;
+     top: -20px;
+     text-align: justify;
+     margin-left: 30px;
+}  
+.create {
+    margin-top: -40px;
+    background-color: pink;
+    
+}
+.form-para2 {
+    margin-left: 10px;
+}
