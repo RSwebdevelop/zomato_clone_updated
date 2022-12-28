@@ -22,11 +22,11 @@
                   
 					
 
-                    <a href="#">Investor Relations</a>
+                    <!-- <a href="#">Investor Relations</a> -->
                     <a href="./html/Add_restaurant.html">Add Restaurant</a>
 					<a href="./html/login.html">Log in</a>
 					<a href="./html/signup.html">Sign up</a>
- main
+ 
 				</div>
 			</nav>
 			<div class="hero-text">
@@ -35,8 +35,15 @@
 				<div class="search-bar">
 					<div class="search-3">
 						<i class="fa fa-map-marker-alt"></i>
-						<input type="text" placeholder="Punjab">
-						<i class="fa fa-caret-down"></i>
+						<input type="text" placeholder="Punjab" class="loc-icon">
+						<!-- ----- -->
+						<div id="all_city">
+
+						</div>
+
+
+						<!-- ------ -->
+						<i class="fa fa-caret-down" id="drop-icon"></i>
 					</div>
 					<div class="search-2">
 						<i class="fas fa-search"></i>
@@ -427,7 +434,7 @@
 	<section class="footer-bar">
 		<div class="container">
 			<div class="footer-lang">
-				<img class="footer-logo" src="zomato-black-logo.webp">
+				<img class="footer-logo" src="\imgs\zomato-black-logo.webp">
 				<div class="btn-lang-top">
 					<a class="lang-btn" href="#"><img src="images/india-flag.jpg" height="13px"> India <small><i class="fa fa-chevron-down"></i></small></a>
 					<a class="lang-btn" href="#"> <i class="fa fa-globe"></i> English <small><i class="fa fa-chevron-down"></i></small></a>
@@ -484,5 +491,6 @@
 		</div>
 		
 	</section>
+	<script src="app.js"></script>
 </body>
 </html>
