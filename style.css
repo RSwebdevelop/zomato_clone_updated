@@ -17,6 +17,7 @@ body {
 	width: 90%;
 	max-width: 1150px;
 	margin: auto;
+	/* border: 1px solid white; */
 }
 
 h1 {
@@ -38,6 +39,7 @@ nav {
 	text-align: center;
 	color: #fff;
 	padding: 16px 48px;
+	/* border: 1px solid white; */
 }
 
 nav a {
@@ -74,7 +76,9 @@ nav .menu i{
     display: none;
 }
 
-
+.getapp {
+	left: 10%;
+}
 
 /*Hero-content*/
 .hero-text {

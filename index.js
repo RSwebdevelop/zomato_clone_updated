@@ -10,7 +10,7 @@ signUp.addEventListener("click", (e) => {
 crossBtn.addEventListener("click", (e) => {
     document.querySelector(".container-form").style.display = "none";
 })
-=======
+
 import {city} from "./javascript/city.js";
 
 let local_containerEl = document.querySelector(".local-container");
@@ -27,4 +27,4 @@ let local_containerEl = document.querySelector(".local-container");
 }).join("")
 // console.log(htmlLocalgrid)
 local_containerEl.innerHTML= htmlLocalgrid;
- main
+//  main
