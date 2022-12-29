@@ -137,9 +137,11 @@
 }
 .sub-quta1 {
   /* background-color: pink; */
-  width: 60%;
+  width: 100%;
   height: 100%;
   box-sizing: border-box;
+  text-align: justify;
+  /* border: 1px solid black; */
 }
 .sub-quta1 h1 {
   font-size: 2.4rem;
@@ -208,6 +210,10 @@
   header {
     display: none;
   }
+  /* .qota-cont2 {
+    display: flex;
+    flex-direction: column;
+  } */
 }
 
 /* ------------------- part below----------- */
@@ -451,6 +457,8 @@ input {
     margin-top: 20px;
   }
 }
+
+
 
 /* 
 ----------end----- */

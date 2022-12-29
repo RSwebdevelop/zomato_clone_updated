@@ -17,6 +17,7 @@ body {
 	width: 90%;
 	max-width: 1150px;
 	margin: auto;
+	/* border: 1px solid white; */
 }
 
 h1 {
@@ -38,6 +39,7 @@ nav {
 	text-align: center;
 	color: #fff;
 	padding: 16px 48px;
+	/* border: 1px solid white; */
 }
 
 nav a {
@@ -74,7 +76,9 @@ nav .menu i{
     display: none;
 }
 
-
+.getapp {
+	left: 10%;
+}
 
 /*Hero-content*/
 .hero-text {
@@ -145,8 +149,9 @@ input[type="text"]:focus {
 .order-cat {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px;
+	grid-gap: 30px;
 	margin-bottom: 50px;
+	
 	/* border: 2px solid purple; */
 }
 
@@ -175,6 +180,8 @@ input[type="text"]:focus {
 .order-cat .hover{
 	position: relative;
 	cursor: pointer;
+	/* border: 1px solid red; */
+	/* height: 90%; */
 	transition: transform 0.3s;
 }
 
@@ -184,6 +191,8 @@ input[type="text"]:focus {
 
 .order-cat img {
 	width: 100%;
+	/* border: 3px solid black; */
+	/* height: 50%; */
 	border-radius: 12px;
 }
 
