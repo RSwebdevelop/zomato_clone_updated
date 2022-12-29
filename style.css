@@ -37,7 +37,7 @@ nav {
 	justify-content: space-between;
 	text-align: center;
 	color: #fff;
-	padding: 20px 0;
+	padding: 16px 48px;
 }
 
 nav a {
@@ -54,7 +54,26 @@ nav .right-menu {
 nav .right-menu a {
 	padding-right: 30px;
 	font-size: 18px;
+	color: white;
 }
+
+nav a:hover, nav a.active{
+    cursor: pointer;
+	/* background-color: white; */
+    
+}
+
+nav .menu i{
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
 
 
 /*Hero-content*/
@@ -112,7 +131,7 @@ input[type="text"]:focus {
 	margin: 0 8px;
 }
 
-.hero-text .search-bar .search-3 {
+.hero-text .search-bar .search-2 {
 	border-right: 2px solid #cfcfcf;
 }
 
@@ -131,6 +150,28 @@ input[type="text"]:focus {
 	
 	/* border: 2px solid purple; */
 }
+
+/* ---- */
+#all_city{
+	/* border: 1px solid magenta; */
+	position: absolute;
+	top: 50%;
+	left: 23.5%;
+	height: 20%;
+	width: 20%;
+	z-index: 1;
+	overflow-y: scroll;
+	/* border-radius: 10px; */
+	/* color: blue; */
+	background-color: white;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 30px;
+	padding: 4px;
+	display: none;
+	
+}
+/* ----- */
 
 .order-cat .hover{
 	position: relative;
@@ -236,13 +277,14 @@ h1.local-title {
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 20px;
 	row-gap: 35px;
+	
 }
 
 .locals-grid .local-box {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px;
+	padding: 10px;
 	font-size: 20px;
 	color: #1c1c1c;
 	border: 1px solid #e8e8e8;
@@ -252,12 +294,32 @@ h1.local-title {
 }
 
 .locals-grid .local-box:hover {
-	box-shadow: 0 1.4px 2.8px 2px rgba(28,28,28,0.08);
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+.locals-grid .local-box p{
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.locals-grid .local-box span{
+	font-size: 1rem;
+	font-weight: 300;
 }
 
 .local-box .fa-chevron-right {
 	font-size: 10px;
 }
+
+/* .local-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	row-gap: 35px;
+	
+} */
+
+
 .more{
 	margin-left: 50px;
 }
@@ -268,21 +330,10 @@ h1.local-title {
     justify-content: center;
     align-items: center;
 
-}
-
-#more-items{
-    transform: rotate(90deg);
-    margin-left: 50px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.more{
-	margin-left: 50px;
 }
 
 /*Get zomato app*/
+
 .zom-app {
 	background-color: #FFFBF7;
 	margin: 100px auto;
@@ -522,7 +573,49 @@ h2.explore-title-2 {
 }
 
 /*Mobile View*/
-@media(max-width: 500px) {
+@media ((max-width: 470px) ) {
+
+	nav .menu i{
+        display: block;
+    }
+
+	.hero-text .search-bar {
+		margin-top: 50px;
+		/* border: 2px solid red; */
+		width: 100%;
+		margin-top: -50px;
+	}
+
+	nav .right-menu, .getapp{
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        background-color: black;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+	nav .right-menu a{
+		font-size: 1em;
+		display: block;
+	  }
+  
+	  nav a:hover, nav a.active{
+		  /* color: white; */
+		  background-color: none;
+	  }
+
+	  #click:checked ~ ul{
+        left: 0%;
+    }
+
+   #click:checked ~ .menu i:before{
+        content:"\f00d";
+    } 
+
+
 	.showcase .container nav ,.search-3 {
 		display: none;
 	}
@@ -533,7 +626,7 @@ h2.explore-title-2 {
 	}
 
 	.hero-text .search-bar {
-		margin-top: 50px;
+		margin-top: 20%;
 		/* border: 2px solid red; */
 		width: 100%;
 	}
@@ -593,5 +686,48 @@ h2.explore-title-2 {
 	.footer-bar .footer-last-links h4.footer-list-title {
 		margin-top: 20px;
 	}
+
+}
+
+@media (max-width:900px){
+    nav .menu i{
+        display: block;
+    }
+
+	.hero-text .search-bar {
+		margin-top: -30px;
+		width: 100%;
+	
+	}
+
+	nav .right-menu, .getapp{
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        background-color: black;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+	nav .right-menu a{
+		font-size: 1em;
+		display: block;
+	  }
+  
+	  nav a:hover, nav a.active{
+		  /* color: white; */
+		  background-color: none;
+	  }
+
+	  #click:checked ~ ul{
+        left: 0%;
+    }
+
+   #click:checked ~ .menu i:before{
+        content:"\f00d";
+    } 
+
 
 }
