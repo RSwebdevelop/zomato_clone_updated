@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/get-app.css">
+	<!-- for connecting css of sign-up -->
+	<link rel="stylesheet" href="../css/signup.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
     <header>
-        <div class="headone"><img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="Zomato" class="sc-cNnxps bKoLYh"></div>
+        <div class="headone"><img src="../images/zomato-black-logo.webp" alt="Zomato"></div>
         <div class="headtwo">
             <a href="./login.html"><button>Log in</button></a>
-            <a href="./signup.html"><button>Sign up</button></a>
+            <div class="sign-up-btn"><button>Sign up</button></div>
         </div>
     </header>
     <main>
@@ -104,5 +107,27 @@
 		
 	</section>
 </footer>
+
+<!-- for sign-up form pop-up will show -->
+<div class="container-form">
+	<div class="sub-cont-form">
+	 <div class="form-container">
+		 <h1>Sign up</h1>
+		 <i class="fa fa-times" id="cross_mark" aria-hidden="true"></i>
+	 </div>
+	 <form class="form-container2">
+			 <input type="text" placeholder="Full name" class="input-box"><br>
+			 <input type="email" placeholder="Email" class="input-box"><br>
+			 <input type="checkbox" class="input-check">
+			 <p class="form-para"> I agree to Zomato's <span style="color: crimson;">Terms of Service</span>, <span style="color: crimson;">Privacy Policy</span> and <span style="color: crimson;">Content Policies</span><br></p>
+			 <button class="account">Create account</button><br>
+			 <hr>
+			 <p class="or-text">or</p><br>
+			 <button class="google-btn"><img src="https://i.pinimg.com/originals/27/fa/9f/27fa9f7a7ce6789c74f3679be56786c8.jpg" alt="google"></button>
+			 <p class="form-para2">Already have an account? <span style="color: crimson;">Log in</span></p>
+	 </form>
+	</div>
+ </div>
+ <script src="../js/signUp.js"></script>
 </body>
 </html>

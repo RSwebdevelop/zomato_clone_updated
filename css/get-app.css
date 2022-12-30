@@ -22,6 +22,9 @@ header .headone {
     /* border: 3px solid red;  */
     /* margin: 20px; */
 }
+.headtwo {
+	display: flex;
+}
 .headtwo button {
     padding: 10px;
     border: none;
@@ -30,6 +33,7 @@ header .headone {
     background-color:white;
     font-size: larger;
     cursor: pointer;
+	
 }
 .headtwo button:hover {
     background-color: blue;
@@ -38,7 +42,7 @@ header .headone {
 .zom-app {
 	/* background-color: #FFFBF7; */
 	margin: 80px auto;
-	padding-top: 50px;
+	padding-top: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
