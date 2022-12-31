@@ -306,15 +306,23 @@ h1.local-title {
 	font-weight: 500;
 }
 
-.locals-grid .local-box span{
+.locals-grid .local-box span {
 	font-size: 1rem;
 	font-weight: 300;
 }
 
-.local-box .fa-chevron-right {
+.local-box .fa-chevron-right  {
 	font-size: 10px;
 }
 
+/*ranjan part for showmore*/
+#show-more-none {
+	width: 250%;
+	display:none;
+	column-gap: 20px;
+	row-gap: 35px;
+	grid-template-columns: auto auto auto;
+}
 /* .local-container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -323,18 +331,28 @@ h1.local-title {
 	
 } */
 
-
 .more{
 	margin-left: 50px;
 }
 
 #more-items{
     transform: rotate(90deg);
-    margin-left: 50px;
+    margin-left: 200px;
+	margin-top: -20px;
     justify-content: center;
     align-items: center;
 
 }
+#more-item-up {
+	display: none;
+    margin-left: 200px;
+	font-size: 0.7rem;
+	margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 /*Get zomato app*/
 
@@ -735,3 +753,4 @@ h2.explore-title-2 {
 
 
 }
+

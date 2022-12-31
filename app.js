@@ -49,3 +49,25 @@ fetchData();
 
 
 // {/* <h3>${item.place}</h3> */}
+
+
+/*Ranjan part js show more*/
+
+const showMoreBtn = document.querySelector("#more-items");
+const showMoreNone = document.querySelector("#more-item-up");
+console.log(showMoreBtn);
+
+function showMore() {
+ document.querySelector("#show-more-none").style.display = "grid";
+ showMoreBtn.style.display = "none";
+ document.querySelector("#more-item-up").style.display = "block"
+}
+
+function originalContainer() {
+  document.querySelector("#show-more-none").style.display = "none";
+  showMoreNone.style.display = "none";
+  showMoreBtn.style.display="grid"
+}
+
+showMoreBtn.addEventListener("click",showMore);
+showMoreNone.addEventListener("click",originalContainer)
