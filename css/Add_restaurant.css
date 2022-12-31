@@ -886,28 +886,38 @@ section {
 .footer-bar {
 	background-color: #F8F8F8;
 	padding-top: 50px;
+    /* width: 100%; */
 }
-
+.footer-bar .container {
+    width: 80%;
+    margin: 0 auto;
+    /* border: 3px solid black; */
+}
 .footer-bar .footer-lang {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 10px;
-    margin: 0 170px;
+	/* margin-bottom: 10px; */
+    /* margin: 0 170px; */
+    /* border: 3px solid red; */
+    width: 90%;
+    margin: 0 auto;
 }
 
 .footer-bar .footer-lang img.footer-logo {
 	height: 28px;
+    /* border: 3px solid red; */
 }
 
 .footer-bar .footer-lang a.lang-btn {
 	text-decoration: none;
 	font-size: 16px;
 	color: #1c1c1c;
-	padding: 8px 5px;
+	padding: 4px 5px;
 	border: 1px solid #b5b5b5;
 	border-radius: 8px;
 	margin-right: 15px;
+    /* border: 3px solid red; */
 }
 
 .footer-bar .footer-last-links {
@@ -915,32 +925,38 @@ section {
 	grid-template-columns: repeat(5, 1fr);
 	padding-top: 30px;
 	padding-bottom: 50px;
-    margin: 0 170px;
+    /* margin: 0 170px; */
+    /* border: 3px solid red; */
 }
 
 .footer-bar .footer-last-links ul li{
 	list-style: none;
 	margin-bottom: 5px;
+    /* border: 3px solid red; */
 }
 
 .footer-bar .footer-last-links h4.footer-list-title {
 	margin-bottom: 10px;
 	letter-spacing: 0.2rem;
 	font-size: 14px;
+    /* border: 3px solid red; */
 }
 
 .footer-bar .footer-last-links ul li a {
 	text-decoration: none;
 	color: #696969;
 	font-size: 14px;
+    /* border: 3px solid red; */
 }
 
 .footer-bar .footer-last-links ul li a:hover {
 	color: #1c1c1c;
+    /* border: 3px solid red; */
 }
 
 .footer-bar .footer-last-links .footer-social-icons {
 	margin-bottom: 20px;
+    /* border: 3px solid red; */
 }
 
 .footer-bar .footer-last-links .footer-social-icons a {
@@ -952,13 +968,14 @@ section {
 .footer-bar .footer-last-links .footer-social-icons .fa-instagram {
 	font-size: 20px;
 	margin-right: 5px;
+    /* border: 3px solid red; */
 }
 
 .footer-bar .footer-copyright {
 	padding-top: 20px;
 	padding-bottom: 30px;
 	border-top: 1px solid #cfcfcf;
-    margin: 0 170px;
+    /* margin: 0 170px; */
 }
 
 

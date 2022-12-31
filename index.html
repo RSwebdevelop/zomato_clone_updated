@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"> -->
 	<link rel="stylesheet" href="style.css">
+	<!-- for connecting css of sign-up -->
+	<link rel="stylesheet" href="./css/signup.css">
 	<!-- <link rel="stylesheet" href="./css/investor-relation.css"> -->
 </head>
 <body>
@@ -24,18 +26,15 @@
                 </label>
 
 				<div class="getapp">
-					<a href="./html/login.html"><i class="fa fa-mobile-alt"></i> Get the App</a>
+					<a href="./html/get-app.html"><i class="fa fa-mobile-alt"></i> Get the App</a>
 				</div>
 				<div class="right-menu">
                     <a href="./html/Add_investor.html">Investor Relations</a>
 
 
-                   
                     <a href="./html/Add_restaurant.html">Add Restaurant</a>
 					<a href="./html/login.html">Log in</a>
-					<a href="./html/signup.html">Sign up</a>
-
-				</div>
+					<div class="sign-up-btn">Sign up</div>
 			</nav>
 			<div class="hero-text">
 				<img src="images/logo.webp" width="300">
@@ -43,8 +42,15 @@
 				<div class="search-bar">
 					<div class="search-2">
 						<i class="fa fa-map-marker-alt"></i>
-						<input type="text" placeholder="Punjab">
-						<i class="fa fa-caret-down"></i>
+						<input type="text" placeholder="Punjab" class="loc-icon">
+						<!-- ----- -->
+						<div id="all_city">
+
+						</div>
+
+
+						<!-- ------ -->
+						<i class="fa fa-caret-down" id="drop-icon"></i>
 					</div>
 					<div class="search-3">
 						<i class="fas fa-search"></i>
@@ -159,10 +165,12 @@
                 <i class="fa fa-chevron-right"></i>
             </div>                      
             <div class="local-box">
-                <p class="more">see more <i id="more-items" class="fa fa-chevron-right"></i></p>
+                <p class="more">see more <i id="more-items" class="fa fa-chevron-right"></i><i class="fa fa-chevron-up" id="more-item-up"></i></p>
             </div>
-                  
-            <!-- <div class="local-box">
+               
+			<!-- -------------- -->
+		<div id="show-more-none">
+             <div class="local-box">
                 <p>Firozpur <br> <span>85 places</span></p>
                 <i class="fa fa-chevron-right"></i>
             </div>          
@@ -233,14 +241,16 @@
             <div class="local-box">
                 <p>Tanda<br> <span>22 places</span></p>
                 <i class="fa fa-chevron-right"></i>
-            </div>                         -->
-		
+            </div> 
+	</div>
+		</div>	
+		<!-- -------------- -->
 		</div>
 	</section>
 
 	<!-- Get zomato app -->
 	<section class="zom-app">
-		<img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png" alt="zomato-app">
+		<img src="images/mobile-app.webp" alt="zomato-app">
 		<div class="zom-app-right">
 			<h1>Get the Zomato App</h1>
 			<p>We will send you a link, open it on your phone to download the app</p>
@@ -430,7 +440,7 @@
 	<section class="footer-bar">
 		<div class="container">
 			<div class="footer-lang">
-				<img class="footer-logo" src="zomato-black-logo.webp">
+				<img class="footer-logo" src="./images/zomato-black-logo.webp" alt="zomato">
 				<div class="btn-lang-top">
 					<a class="lang-btn" href="#"><img src="images/india-flag.jpg" height="13px"> India <small><i class="fa fa-chevron-down"></i></small></a>
 					<a class="lang-btn" href="#"> <i class="fa fa-globe"></i> English <small><i class="fa fa-chevron-down"></i></small></a>
@@ -487,7 +497,34 @@
 		</div>
 		
 	</section>
+  <!-- api_create -->
+	
 
-	<script src="index.js" type="module"></script>
+ 
+	<!-- for sign-up form pop-up will show -->
+	<div class="container-form">
+       <div class="sub-cont-form">
+		<div class="form-container">
+            <h1>Sign up</h1>
+            <i class="fa fa-times" id="cross_mark" aria-hidden="true"></i>
+        </div>
+        <form class="form-container2">
+                <input type="text" placeholder="Full name" class="input-box"><br>
+                <input type="email" placeholder="Email" class="input-box"><br>
+                <input type="checkbox" class="input-check">
+                <p class="form-para"> I agree to Zomato's <span style="color: crimson;">Terms of Service</span>, <span style="color: crimson;">Privacy Policy</span> and <span style="color: crimson;">Content Policies</span><br></p>
+                <button class="account">Create account</button><br>
+                <hr>
+                <p class="or-text">or</p><br>
+                <button class="google-btn"><img src="https://i.pinimg.com/originals/27/fa/9f/27fa9f7a7ce6789c74f3679be56786c8.jpg" alt="google"></button>
+                <p class="form-para2">Already have an account? <span style="color: crimson;">Log in</span></p>
+        </form>
+	   </div>
+    </div>
+
+
+
+	<script src="app.js"></script>
+     <script src="./js/signUp.js"></script>
 </body>
 </html>
