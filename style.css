@@ -17,6 +17,7 @@ body {
 	width: 90%;
 	max-width: 1150px;
 	margin: auto;
+	/* border: 1px solid white; */
 }
 
 h1 {
@@ -38,6 +39,7 @@ nav {
 	text-align: center;
 	color: #fff;
 	padding: 16px 48px;
+	/* border: 1px solid white; */
 }
 
 nav a {
@@ -74,7 +76,9 @@ nav .menu i{
     display: none;
 }
 
-
+.getapp {
+	left: 10%;
+}
 
 /*Hero-content*/
 .hero-text {
@@ -145,14 +149,39 @@ input[type="text"]:focus {
 .order-cat {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px;
+	grid-gap: 30px;
 	margin-bottom: 50px;
+	
 	/* border: 2px solid purple; */
 }
+
+/* ---- */
+#all_city{
+	/* border: 1px solid magenta; */
+	position: absolute;
+	top: 50%;
+	left: 23.5%;
+	height: 20%;
+	width: 20%;
+	z-index: 1;
+	overflow-y: scroll;
+	/* border-radius: 10px; */
+	/* color: blue; */
+	background-color: white;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 30px;
+	padding: 4px;
+	display: none;
+	
+}
+/* ----- */
 
 .order-cat .hover{
 	position: relative;
 	cursor: pointer;
+	/* border: 1px solid red; */
+	/* height: 90%; */
 	transition: transform 0.3s;
 }
 
@@ -162,6 +191,8 @@ input[type="text"]:focus {
 
 .order-cat img {
 	width: 100%;
+	/* border: 3px solid black; */
+	/* height: 50%; */
 	border-radius: 12px;
 }
 
@@ -275,15 +306,23 @@ h1.local-title {
 	font-weight: 500;
 }
 
-.locals-grid .local-box span{
+.locals-grid .local-box span {
 	font-size: 1rem;
 	font-weight: 300;
 }
 
-.local-box .fa-chevron-right {
+.local-box .fa-chevron-right  {
 	font-size: 10px;
 }
 
+/*ranjan part for showmore*/
+#show-more-none {
+	width: 250%;
+	display:none;
+	column-gap: 20px;
+	row-gap: 35px;
+	grid-template-columns: auto auto auto;
+}
 /* .local-container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -292,18 +331,28 @@ h1.local-title {
 	
 } */
 
-
 .more{
 	margin-left: 50px;
 }
 
 #more-items{
     transform: rotate(90deg);
-    margin-left: 50px;
+    margin-left: 200px;
+	margin-top: -20px;
     justify-content: center;
     align-items: center;
 
 }
+#more-item-up {
+	display: none;
+    margin-left: 200px;
+	font-size: 0.7rem;
+	margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 /*Get zomato app*/
 
@@ -704,3 +753,4 @@ h2.explore-title-2 {
 
 
 }
+
