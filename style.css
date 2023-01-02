@@ -175,6 +175,15 @@ input[type="text"]:focus {
 	display: none;
 	
 }
+
+#drop-icon{
+	transform: rotate(180deg);
+    /* margin-left: 200px;
+	margin-top: -20px; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
 /* ----- */
 
 .order-cat .hover{
