@@ -37,11 +37,18 @@ body {
     /* margin: 1.5rem 0px; */
     font-weight:100;
     color: rgb(79, 79, 79);
+    /* border: 2px solid black; */
 }
 img {
   width: 12%;
+  /* border: 2px solid black; */
 }
-
+.login-email {
+  width: 12%;
+  height: 10%;
+  padding: 8px;
+  /* border: 2px solid black; */
+}
 
 .send {
   display: flex;
@@ -54,15 +61,18 @@ img {
 }
 .send1{
   display: flex;
-  /* border: 1px solid red; */
-
-  
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 0.5rem;
+  /* border: 3px solid;
+  background-color: pink; */
 }
 select{
-  width: 16%;
-  height: -1%;
-  padding-top: 0%;
-  margin-top: 5%;
+  /* width: 16%; */
+  /* height: -1%; */
+  /* padding-top: 0%; */
+  /* margin-top: 5%; */
+  border: none;
+  margin: 10px;
   /* border: 2px solid yellow; */
 }
 .text1{
@@ -70,17 +80,12 @@ select{
     padding: 10px;
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
     font-size: 1.2rem;
-    margin-top: 5%;
-}
-.line{
-  width: 0px;
-  height: 2.4rem;
-  border-right: 1px solid rgb(207, 207, 207);
-  margin-left: 1rem;
-
+    margin: 10px;
+    border: none;
+    /* background-color: red; */
+    border-left: 1px solid rgb(207, 207, 207);
 }
 .btn {
 
@@ -90,15 +95,16 @@ select{
   outline: none;
   /* box-shadow: rgb(0 0 0 / 16%) 0px 0.4rem 0.6rem; */
   box-shadow: var();
-  width: 96%;
+  /* width: 96%; */
   /* height: 94%; */
   padding: 10px;
   display: flex;
-  /* border: 1px solid red; */
+  /* border: 4px solid black; */
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: lighter;
   border-radius: 0.3rem;
   gap: 2rem;
   flex-direction: column;
@@ -111,23 +117,31 @@ select{
   color: var(--color-black);
   
 }
-/* .input{
-  text-emphasis: none;
-} */
-.container {
-  display: flex;
+.log-in-btn {
+  cursor: pointer;
+  margin-right: 20px;
+  /* border: 2px solid white; */
+}
+.login-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
   justify-content: center;
   align-items: center;
-  max-width: 80rem;
-  min-height: 100vh;
   width: 100%;
-  padding: 0 2rem;
-  margin: 0 auto;
+  height: 100%;
+  top: 1px;
+  position: fixed;
+  
 }
 .main .wrapper {
   max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
-  width: 100%;
+  position: relative;
+  z-index: 1000;
+  /* width: 100%; */
   margin: 2rem auto;
   padding: 2rem 2.5rem;
   /* border:1px solid red; */
@@ -136,11 +150,6 @@ select{
   color: var(--color-black);
   background: var(--color-white);
   box-shadow: var(--shadow-large);
-}
-.main .wrapper {
-  width: 100%;
-  height: auto;
-  margin-top: 2rem;
 }
 .main .wrapper .form .input-control {
   display: flex;
@@ -182,9 +191,12 @@ select{
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid var(--color-grayish);
+ border: 1px solid rgb(207, 207, 207);
   border-radius: 0.5rem;
   text-decoration: none;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: rgb(105, 105, 105);
   /* border: 2px solid green; */
 }
 .main .wrapper .method-action:hover {

@@ -5,15 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Zomato_clone</title>
     <link rel="icon" href="./images/zomato_logo.png">
-	<!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"> -->
+	
 	<link rel="stylesheet" href="style.css">
 	<!-- for connecting css of sign-up -->
 	<link rel="stylesheet" href="./css/signup.css">
-	<!-- <link rel="stylesheet" href="./css/investor-relation.css"> -->
+	<!-- for connecting css file of login -->
+	<link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
 	<!-- Header showcase-->
@@ -33,7 +31,7 @@
 
 
                     <a href="./html/Add_restaurant.html">Add Restaurant</a>
-					<a href="./html/login.html">Log in</a>
+					<div class="log-in-btn">Log in</div>
 					<div class="sign-up-btn">Sign up</div>
 			</nav>
 			<div class="hero-text">
@@ -521,10 +519,68 @@
         </form>
 	   </div>
     </div>
+   
+	 <!-- after clicking account btn next page has to shown -->
+         <div class="container-form">
+            <div class="sub-cont-form">
+				<div class="form-container">
+					<h1>Enter OTP</h1>
+					<i class="fa fa-times" id="cross_mark" aria-hidden="true"></i>
+				</div>
+			</div>
+		 </div>
 
+     <!-- login form for adding pop-up functionality -->
+	 <main class="main">
+        <div class="login-container">
+            <section class="wrapper">
+               
+                <div class="heading flex">
+                    <h1 class="text text-large">Login</h1>
+                    <i class="fa fa-times" id="login_Cross" aria-hidden="true"></i>
+                </div>
+                <div class="send flex">
+                    <div class="send1">
+                        <select>
+                            <option>+91</option>
+                            <option>+88</option>
+                            <option>+67</option>
+                            <option>+90</option>
+                            <option>+89</option>
+                        </select>
+                    
+                        <input type="number" name="phone" id="phone" class="text1 input-control" placeholder="Phone">
+                    </div>
+                    <button class="btn">Send One Time Password</button>
+                </div>
+                <div class="striped">
+                    <span class="striped-line"></span>
+                    <span class="striped-text">or</span>
+                    <span class="striped-line"></span>
+                </div>
+                <div class="method">
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <!-- <i class="ion ion-logo-google"></i> -->
+							<svg xmlns="http://www.w3.org/2000/svg" fill="#EF4F5F" width="24" height="24" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="login-email"><title>mail-fill</title><path d="M10 9.58c-1.62 0-10-4.76-10-4.76v-0.74c0-0.92 0.74-1.66 1.66-1.66h16.68c0.92 0 1.66 0.74 1.66 1.66l-0.020 0.84c0 0-8.28 4.66-9.98 4.66zM10 11.86c1.78 0 9.98-4.46 9.98-4.46l0.020 10c0 0.92-0.74 1.66-1.66 1.66h-16.68c-0.92 0-1.66-0.74-1.66-1.66l0.020-10c0 0 8.36 4.46 9.98 4.46z" ></path></svg>
+                            <!-- <i class="fa-solid fa-envelope" style="color: red; "></i> -->
+                            <span>Continue with Email</span>
+                        </a>
+                    </div>
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <img src="../images/login/icon.png" alt="">
+                            <span>Continue with Google</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
 
 	<script src="app.js"></script>
-     <script src="./js/signUp.js"></script>
+    <script src="./js/signUp.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
