@@ -1,5 +1,6 @@
 const loc = document.querySelector("#drop-icon");
-let loc_icon = document.getElementsByClassName("loc-icon");
+let city_location = document.getElementsByClassName("city_location");
+const all_city = document.querySelector("#all_city");
 let result;
 
 // async function apiCall() {
@@ -33,7 +34,7 @@ async function fetchData() {
                               <h3>${item.place} , ${item.state}</h3>
                                                         
                             `;
-    console.log(loc_icon);
+    // console.log(city_location);
   });
 }
 
@@ -45,6 +46,12 @@ loc.addEventListener("click", (e)=>{
 
 
 fetchData();
+
+all_city.addEventListener('click', e => {
+  console.log("YEA");
+  let place = e.target.innerText;
+  city_location[0].value = place;
+})
 
 
 
