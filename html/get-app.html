@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="../css/get-app.css">
 	<!-- for connecting css of sign-up -->
 	<link rel="stylesheet" href="../css/signup.css">
+	<!-- for connecting css file of login -->
+	<link rel="stylesheet" href="../css/login.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
     <header>
         <div class="headone"><img src="../images/zomato-black-logo.webp" alt="Zomato"></div>
         <div class="headtwo">
-            <a href="./login.html"><button>Log in</button></a>
+            <div class="log-in-btn"><button>Log in</button></div>
             <div class="sign-up-btn"><button>Sign up</button></div>
         </div>
     </header>
@@ -128,6 +130,55 @@
 	 </form>
 	</div>
  </div>
+
+   <!-- login form for adding pop-up functionality -->
+   <main class="main">
+	<div class="login-container">
+		<section class="wrapper">
+		   
+			<div class="heading flex">
+				<h1 class="text text-large">Login</h1>
+				<i class="fa fa-times" id="login_Cross" aria-hidden="true"></i>
+			</div>
+			<div class="send flex">
+				<div class="send1">
+					<select>
+						<option>+91</option>
+						<option>+88</option>
+						<option>+67</option>
+						<option>+90</option>
+						<option>+89</option>
+					</select>
+				
+					<input type="number" name="phone" id="phone" class="text1 input-control" placeholder="Phone">
+				</div>
+				<button class="btn">Send One Time Password</button>
+			</div>
+			<div class="striped">
+				<span class="striped-line"></span>
+				<span class="striped-text">or</span>
+				<span class="striped-line"></span>
+			</div>
+			<div class="method">
+				<div class="method-control">
+					<a href="#" class="method-action">
+						<!-- <i class="ion ion-logo-google"></i> -->
+						<svg xmlns="http://www.w3.org/2000/svg" fill="#EF4F5F" width="24" height="24" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="login-email"><title>mail-fill</title><path d="M10 9.58c-1.62 0-10-4.76-10-4.76v-0.74c0-0.92 0.74-1.66 1.66-1.66h16.68c0.92 0 1.66 0.74 1.66 1.66l-0.020 0.84c0 0-8.28 4.66-9.98 4.66zM10 11.86c1.78 0 9.98-4.46 9.98-4.46l0.020 10c0 0.92-0.74 1.66-1.66 1.66h-16.68c-0.92 0-1.66-0.74-1.66-1.66l0.020-10c0 0 8.36 4.46 9.98 4.46z" ></path></svg>
+						<!-- <i class="fa-solid fa-envelope" style="color: red; "></i> -->
+						<span>Continue with Email</span>
+					</a>
+				</div>
+				<div class="method-control">
+					<a href="#" class="method-action">
+						<img src="../images/login/icon.png" alt="">
+						<span>Continue with Google</span>
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
  <script src="../js/signUp.js"></script>
+ <script src="../js/login.js"></script>
 </body>
 </html>
