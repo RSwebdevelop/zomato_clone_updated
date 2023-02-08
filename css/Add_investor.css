@@ -45,6 +45,14 @@
     box-sizing: border-box;
     /* background-color: yellow; */
 }
+.investor-second-ul a {
+    list-style: none;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+}
 .investor-second-ul li:hover {
     color: crimson;
     cursor: pointer;
